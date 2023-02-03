@@ -1,6 +1,6 @@
 import { ActionModel } from "../../models/ActionModel";
 import { StepModel } from "../../models/StepModel";
-import { SET_CURRENT_STEP, SET_FORM, SET_STEPS } from "./constants";
+import { SET_CURRENT_STEP, SET_FORM, SET_STEPS, UPDATE_FORM } from "./constants";
 
 interface DispatchFn {
     (action: ActionModel): void
@@ -31,5 +31,12 @@ export const initForm = () => (dispatch: DispatchFn) => {
         payload: {}
     })
 
+};
+
+export const updateForm = (payload: { [key: string]: string | number }) => (dispatch: DispatchFn) => {
+    dispatch(({
+        type: UPDATE_FORM,
+        payload
+    }))
 };
 

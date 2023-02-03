@@ -5,6 +5,7 @@ import { IconType } from "react-icons/lib";
 
 interface ComponentProps {
   type: InputType;
+  refInput?: React.RefObject<HTMLInputElement>;
   icon?: IconType;
   label?: string;
   minLength?: number;
@@ -34,6 +35,7 @@ function Input(props: ComponentProps) {
           min={props.min}
           minLength={props.minLength}
           maxLength={props.maxLength}
+          ref={props.refInput}
         />
       </div>
     </article>
