@@ -102,3 +102,6 @@ dist
 
 # TernJS port file
 .tern-port
+
+# Production building doesn't need to be uploaded
+build

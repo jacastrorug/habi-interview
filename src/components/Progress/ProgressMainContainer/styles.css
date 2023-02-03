@@ -1,0 +1,10 @@
+.layout-main-container__form-container {
+  flex: 8;
+}
+
+@media(max-width: 700px) {
+  .layout-main-container__form-container {
+    flex: 1;
+    width: 100%;
+  }
+}

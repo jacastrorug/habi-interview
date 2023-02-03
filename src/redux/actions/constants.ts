@@ -1,0 +1,9 @@
+const SET_CURRENT_STEP = 'SET_CURRENT_STEP';
+const SET_STEPS = 'SET_STEPS';
+const SET_FORM = 'SET_FORM';
+
+export {
+    SET_CURRENT_STEP,
+    SET_STEPS,
+    SET_FORM
+}
